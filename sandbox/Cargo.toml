@@ -1,0 +1,39 @@
+[package]
+name = "sandbox"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.12", features = ["full"] }
+get-size = { version = "^0.1", features = ["derive"] }
+
+flame = "0.2.2"
+flamer = "0.3"
+
+petgraph = "0.6"
+
+[[bin]]
+name = "atomicptr"
+path = "atomicptr/main.rs"
+[[bin]]
+name = "lifetime"
+path = "lifetime/main.rs"
+[[bin]]
+name = "rcrefcell"
+path = "rcrefcell/main.rs"
+[[bin]]
+name = "flame"
+path = "flame/main.rs"
+[[bin]]
+name = "graph"
+path = "graph/main.rs"
+
+[[bin]]
+name = "label"
+path = "label/main.rs"
+[[bin]]
+name = "sizeof"
+path = "sizeof/main.rs"
+[[bin]]
+name = "hasher"
+path = "hasher/main.rs"
